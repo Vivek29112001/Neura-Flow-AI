@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🤖 NeuraFlow — Personal AI Learning Intelligence System
 
 > Stay updated with AI every day. Automatically.
@@ -265,4 +266,6 @@ If this project helped you, please give it a ⭐ on GitHub!
 ---
 
 *Built with ❤️ by Vivek Sharma | Powered by Groq LLaMA & NeuraFlow*
+=======
+>>>>>>> 8c2bdbc8a64d3752144cba59e9c9d82ff82fe6d2
 "# Neura-Flow-AI" 

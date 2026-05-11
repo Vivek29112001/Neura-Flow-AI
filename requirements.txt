@@ -1,0 +1,13 @@
+groq
+feedparser
+requests
+python-dotenv
+google-api-python-client
+google-auth
+google-auth-oauthlib
+google-auth-httplib2
+sqlalchemy
+fastapi
+uvicorn
+apscheduler
+pytz
