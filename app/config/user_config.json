@@ -1,0 +1,53 @@
+{
+    "user": {
+        "name": "Vivek",
+        "level": "Intermediate",
+        "language": "English",
+        "goals": [
+            "get_ai_job",
+            "learn_ai",
+            "stay_updated"
+        ]
+    },
+    "topics": {
+        "primary": [
+            "AI",
+            "Machine Learning",
+            "LLM"
+        ],
+        "secondary": [
+            "Python",
+            "Cloud",
+            "Cybersecurity"
+        ]
+    },
+    "jobs": {
+        "locations": [
+            "India",
+            "Remote"
+        ],
+        "roles": [
+            "AI Engineer",
+            "ML Engineer",
+            "Data Scientist"
+        ],
+        "experience": "1-3 years"
+    },
+    "schedule": {
+        "report_time": "07:00",
+        "timezone": "Asia/Kolkata"
+    },
+    "agents": {
+        "NeuraNews": true,
+        "NeuraJobs": true,
+        "NeuraLearn": true,
+        "NeuraCode": true,
+        "NeuraWatch": true,
+        "NeuraForge": true
+    },
+    "channels": {
+        "email": true,
+        "calendar": true,
+        "push": false
+    }
+}

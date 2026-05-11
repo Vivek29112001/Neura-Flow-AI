@@ -1,0 +1,610 @@
+2026-05-11 23:16:37 | INFO | ✅ Config loaded successfully
+2026-05-11 23:16:37 | INFO | 🧠 NeuraCore initialized | Day: Monday | User: Vivek
+2026-05-11 23:20:18 | INFO | ✅ Config loaded successfully
+2026-05-11 23:20:18 | INFO | 🧠 NeuraCore initialized | Day: Monday | User: Vivek
+2026-05-11 23:20:18 | INFO | =======================================================
+2026-05-11 23:20:18 | INFO | 🚀 NeuraFlow pipeline starting...
+2026-05-11 23:20:18 | INFO | 👤 User   : Vivek
+2026-05-11 23:20:18 | INFO | 🎯 Goals  : ['get_ai_job', 'learn_ai', 'stay_updated']
+2026-05-11 23:20:18 | INFO | 📅 Day    : Monday
+2026-05-11 23:20:18 | INFO | =======================================================
+2026-05-11 23:20:18 | INFO | 📋 Agents to run today: ['NeuraCode', 'NeuraForge', 'NeuraJobs', 'NeuraLearn', 'NeuraNews', 'NeuraWatch']
+2026-05-11 23:20:18 | INFO | 
+── Running NeuraCode ──
+2026-05-11 23:20:18 | INFO | ▶ Starting NeuraCode...
+2026-05-11 23:20:18 | WARNING | ⚠ Attempt 1/2 failed. Retrying in 1.0s...
+2026-05-11 23:20:19 | ERROR | ❌ All 2 attempts failed: No module named 'agents.github_agent'
+2026-05-11 23:20:19 | INFO | ✅ NeuraCode done in 1.0s
+2026-05-11 23:20:19 | INFO | 
+── Running NeuraForge ──
+2026-05-11 23:20:19 | INFO | ▶ Starting NeuraForge...
+2026-05-11 23:20:19 | WARNING | ⚠ Attempt 1/2 failed. Retrying in 1.0s...
+2026-05-11 23:20:20 | ERROR | ❌ All 2 attempts failed: No module named 'agents.project_agent'
+2026-05-11 23:20:20 | INFO | ✅ NeuraForge done in 1.0s
+2026-05-11 23:20:20 | INFO | 
+── Running NeuraJobs ──
+2026-05-11 23:20:20 | INFO | ▶ Starting NeuraJobs...
+2026-05-11 23:20:20 | WARNING | ⚠ Attempt 1/3 failed. Retrying in 2.0s...
+2026-05-11 23:20:22 | WARNING | ⚠ Attempt 2/3 failed. Retrying in 2.0s...
+2026-05-11 23:20:24 | ERROR | ❌ All 3 attempts failed: cannot import name 'run_job_agent' from 'agents.job_agent' (C:\Users\AIML\Desktop\Neura-Flow AI\app\agents\job_agent.py)
+2026-05-11 23:20:24 | INFO | ✅ NeuraJobs done in 4.0s
+2026-05-11 23:20:24 | INFO | 
+── Running NeuraLearn ──
+2026-05-11 23:20:24 | INFO | ▶ Starting NeuraLearn...
+2026-05-11 23:20:24 | WARNING | ⚠ Attempt 1/2 failed. Retrying in 1.0s...
+2026-05-11 23:20:25 | ERROR | ❌ All 2 attempts failed: No module named 'agents.learning_agent'
+2026-05-11 23:20:25 | INFO | ✅ NeuraLearn done in 1.0s
+2026-05-11 23:20:25 | INFO | 
+── Running NeuraNews ──
+2026-05-11 23:20:25 | INFO | ▶ Starting NeuraNews...
+2026-05-11 23:20:25 | WARNING | ⚠ Attempt 1/3 failed. Retrying in 2.0s...
+2026-05-11 23:20:27 | WARNING | ⚠ Attempt 2/3 failed. Retrying in 2.0s...
+2026-05-11 23:20:29 | ERROR | ❌ All 3 attempts failed: unterminated string literal (detected at line 79) (news_agent.py, line 79)
+2026-05-11 23:20:29 | INFO | ✅ NeuraNews done in 4.02s
+2026-05-11 23:20:29 | INFO | 
+── Running NeuraWatch ──
+2026-05-11 23:20:29 | INFO | ▶ Starting NeuraWatch...
+2026-05-11 23:20:29 | WARNING | ⚠ Attempt 1/2 failed. Retrying in 1.0s...
+2026-05-11 23:20:30 | ERROR | ❌ All 2 attempts failed: No module named 'agents.company_agent'
+2026-05-11 23:20:30 | INFO | ✅ NeuraWatch done in 1.0s
+2026-05-11 23:20:30 | INFO | 
+✅ 0/6 agents completed
+2026-05-11 23:20:31 | INFO | NeuraCompose initialized with 0 agent results
+2026-05-11 23:20:31 | INFO | NeuraCompose starting...
+2026-05-11 23:20:31 | WARNING | No agent results to compose!
+2026-05-11 23:20:31 | INFO | ⏱ run completed in 13.01s
+2026-05-11 23:23:53 | INFO | ✅ Config loaded successfully
+2026-05-11 23:23:53 | INFO | 🧠 NeuraCore initialized | Day: Monday | User: Vivek
+2026-05-11 23:23:53 | INFO | =======================================================
+2026-05-11 23:23:53 | INFO | 🚀 NeuraFlow pipeline starting...
+2026-05-11 23:23:53 | INFO | 👤 User   : Vivek
+2026-05-11 23:23:53 | INFO | 🎯 Goals  : ['get_ai_job', 'learn_ai', 'stay_updated']
+2026-05-11 23:23:53 | INFO | 📅 Day    : Monday
+2026-05-11 23:23:53 | INFO | =======================================================
+2026-05-11 23:23:53 | INFO | 📋 Agents to run today: ['NeuraCode', 'NeuraForge', 'NeuraJobs', 'NeuraLearn', 'NeuraNews', 'NeuraWatch']
+2026-05-11 23:23:53 | INFO | 
+── Running NeuraCode ──
+2026-05-11 23:23:53 | INFO | ▶ Starting NeuraCode...
+2026-05-11 23:23:54 | INFO | NeuraCode fetching GitHub trends...
+2026-05-11 23:23:56 | INFO | Fetched GitHub trending for artificial-intelligence
+2026-05-11 23:23:57 | INFO | Fetched GitHub trending for machine-learning
+2026-05-11 23:23:57 | INFO | Fetched GitHub trending for llm
+2026-05-11 23:23:58 | INFO | Fetched GitHub trending for langchain
+2026-05-11 23:24:00 | INFO | ✅ NeuraCode done in 7.16s
+2026-05-11 23:24:00 | INFO | 
+── Running NeuraForge ──
+2026-05-11 23:24:00 | INFO | ▶ Starting NeuraForge...
+2026-05-11 23:24:01 | INFO | NeuraForge generating project ideas...
+2026-05-11 23:24:02 | INFO | ✅ NeuraForge done in 2.14s
+2026-05-11 23:24:02 | INFO | 
+── Running NeuraJobs ──
+2026-05-11 23:24:02 | INFO | ▶ Starting NeuraJobs...
+2026-05-11 23:24:03 | INFO | NeuraJobs starting...
+2026-05-11 23:24:03 | INFO | Fetched 0 jobs from Indeed AI Jobs
+2026-05-11 23:24:04 | INFO | Fetched 0 jobs from Indeed ML Jobs
+2026-05-11 23:24:04 | INFO | Fetched 0 jobs from Indeed Data Science
+2026-05-11 23:24:05 | INFO | Fetched 0 jobs from Indeed Python
+2026-05-11 23:24:05 | INFO | Fetched 0 jobs from Indeed LLM
+2026-05-11 23:24:09 | INFO | Fetched 5 jobs from RemoteOK AI
+2026-05-11 23:24:10 | INFO | Fetched 0 jobs from RemoteOK ML
+2026-05-11 23:24:12 | INFO | Fetched 0 jobs from RemoteOK Data
+2026-05-11 23:24:14 | INFO | Fetched 5 jobs from WeWorkRemotely
+2026-05-11 23:24:16 | INFO | Fetched 0 jobs from AI Jobs Board
+2026-05-11 23:24:17 | INFO | Fetched 0 jobs from HackerNews Jobs
+2026-05-11 23:24:17 | INFO | Total jobs fetched: 10
+2026-05-11 23:24:19 | INFO | NeuraJobs analysis done!
+2026-05-11 23:24:19 | INFO | ✅ NeuraJobs done in 16.46s
+2026-05-11 23:24:19 | INFO | 
+── Running NeuraLearn ──
+2026-05-11 23:24:19 | INFO | ▶ Starting NeuraLearn...
+2026-05-11 23:24:19 | INFO | NeuraLearn generating learning path...
+2026-05-11 23:24:21 | INFO | ✅ NeuraLearn done in 2.19s
+2026-05-11 23:24:21 | INFO | 
+── Running NeuraNews ──
+2026-05-11 23:24:21 | INFO | ▶ Starting NeuraNews...
+2026-05-11 23:24:22 | INFO | NeuraNews fetching articles...
+2026-05-11 23:24:27 | INFO | Fetched from arXiv AI
+2026-05-11 23:24:31 | INFO | Fetched from arXiv ML
+2026-05-11 23:24:32 | INFO | Fetched from Hugging Face
+2026-05-11 23:24:34 | INFO | Fetched from OpenAI Blog
+2026-05-11 23:24:38 | INFO | Fetched from Google AI Blog
+2026-05-11 23:24:41 | INFO | Fetched from LangChain Blog
+2026-05-11 23:24:44 | INFO | Fetched from Anthropic Blog
+2026-05-11 23:24:45 | INFO | Fetched from VentureBeat AI
+2026-05-11 23:24:46 | INFO | Fetched from MIT Tech Review
+2026-05-11 23:24:48 | INFO | Fetched from IEEE Spectrum AI
+2026-05-11 23:24:50 | INFO | Fetched from Reddit ML
+2026-05-11 23:24:52 | INFO | Fetched from Reddit LocalLLaMA
+2026-05-11 23:24:52 | INFO | Total new articles: 50
+2026-05-11 23:24:53 | INFO | ✅ NeuraNews done in 31.58s
+2026-05-11 23:24:53 | INFO | 
+── Running NeuraWatch ──
+2026-05-11 23:24:53 | INFO | ▶ Starting NeuraWatch...
+2026-05-11 23:24:53 | INFO | NeuraWatch fetching company updates...
+2026-05-11 23:24:55 | INFO | Fetched from OpenAI
+2026-05-11 23:25:01 | INFO | Fetched from Anthropic
+2026-05-11 23:25:06 | INFO | Fetched from Google AI
+2026-05-11 23:25:07 | INFO | Fetched from Meta AI
+2026-05-11 23:25:08 | INFO | Fetched from Microsoft
+2026-05-11 23:25:09 | INFO | Fetched from DeepMind
+2026-05-11 23:25:10 | INFO | ✅ NeuraWatch done in 17.78s
+2026-05-11 23:25:10 | INFO | 
+✅ 6/6 agents completed
+2026-05-11 23:25:11 | INFO | NeuraCompose initialized with 6 agent results
+2026-05-11 23:25:11 | INFO | NeuraCompose starting...
+2026-05-11 23:25:11 | INFO | Combined 6 agent reports
+2026-05-11 23:25:11 | INFO | Generating unified report with Groq AI...
+2026-05-11 23:25:45 | INFO | Unified report generated!
+2026-05-11 23:25:45 | INFO | Delivering to channels...
+2026-05-11 23:25:50 | INFO | Email sent successfully!
+2026-05-11 23:25:51 | ERROR | Calendar failed: Ran out of input
+2026-05-11 23:25:51 | INFO | NeuraCompose done! Report delivered.
+2026-05-11 23:25:51 | INFO | ⏱ run completed in 117.67s
+2026-05-11 23:29:55 | INFO | ✅ Config loaded successfully
+2026-05-11 23:29:55 | INFO | 🧠 NeuraCore initialized | Day: Monday | User: Vivek
+2026-05-11 23:29:55 | INFO | =======================================================
+2026-05-11 23:29:55 | INFO | 🚀 NeuraFlow pipeline starting...
+2026-05-11 23:29:55 | INFO | 👤 User   : Vivek
+2026-05-11 23:29:55 | INFO | 🎯 Goals  : ['get_ai_job', 'learn_ai', 'stay_updated']
+2026-05-11 23:29:55 | INFO | 📅 Day    : Monday
+2026-05-11 23:29:55 | INFO | =======================================================
+2026-05-11 23:29:55 | INFO | 📋 Agents to run today: ['NeuraCode', 'NeuraForge', 'NeuraJobs', 'NeuraLearn', 'NeuraNews', 'NeuraWatch']
+2026-05-11 23:29:55 | INFO | 
+── Running NeuraCode ──
+2026-05-11 23:29:55 | INFO | ▶ Starting NeuraCode...
+2026-05-11 23:29:56 | INFO | NeuraCode fetching GitHub trends...
+2026-05-11 23:29:58 | INFO | Fetched GitHub trending for artificial-intelligence
+2026-05-11 23:29:59 | INFO | Fetched GitHub trending for machine-learning
+2026-05-11 23:29:59 | INFO | Fetched GitHub trending for llm
+2026-05-11 23:30:00 | INFO | Fetched GitHub trending for langchain
+2026-05-11 23:30:02 | INFO | ✅ NeuraCode done in 7.42s
+2026-05-11 23:30:02 | INFO | 
+── Running NeuraForge ──
+2026-05-11 23:30:02 | INFO | ▶ Starting NeuraForge...
+2026-05-11 23:30:03 | INFO | NeuraForge generating project ideas...
+2026-05-11 23:30:04 | INFO | ✅ NeuraForge done in 2.3s
+2026-05-11 23:30:04 | INFO | 
+── Running NeuraJobs ──
+2026-05-11 23:30:04 | INFO | ▶ Starting NeuraJobs...
+2026-05-11 23:30:05 | INFO | NeuraJobs starting...
+2026-05-11 23:30:05 | INFO | Fetched 0 jobs from Indeed AI Jobs
+2026-05-11 23:30:06 | INFO | Fetched 0 jobs from Indeed ML Jobs
+2026-05-11 23:30:06 | INFO | Fetched 0 jobs from Indeed Data Science
+2026-05-11 23:30:07 | INFO | Fetched 0 jobs from Indeed Python
+2026-05-11 23:30:07 | INFO | Fetched 0 jobs from Indeed LLM
+2026-05-11 23:30:11 | INFO | Fetched 5 jobs from RemoteOK AI
+2026-05-11 23:30:12 | INFO | Fetched 0 jobs from RemoteOK ML
+2026-05-11 23:30:15 | INFO | Fetched 0 jobs from RemoteOK Data
+2026-05-11 23:30:17 | INFO | Fetched 5 jobs from WeWorkRemotely
+2026-05-11 23:30:18 | INFO | Fetched 0 jobs from AI Jobs Board
+2026-05-11 23:30:20 | INFO | Fetched 0 jobs from HackerNews Jobs
+2026-05-11 23:30:20 | INFO | Total jobs fetched: 10
+2026-05-11 23:30:22 | INFO | NeuraJobs analysis done!
+2026-05-11 23:30:22 | INFO | ✅ NeuraJobs done in 17.03s
+2026-05-11 23:30:22 | INFO | 
+── Running NeuraLearn ──
+2026-05-11 23:30:22 | INFO | ▶ Starting NeuraLearn...
+2026-05-11 23:30:22 | INFO | NeuraLearn generating learning path...
+2026-05-11 23:30:24 | INFO | ✅ NeuraLearn done in 2.16s
+2026-05-11 23:30:24 | INFO | 
+── Running NeuraNews ──
+2026-05-11 23:30:24 | INFO | ▶ Starting NeuraNews...
+2026-05-11 23:30:24 | INFO | NeuraNews fetching articles...
+2026-05-11 23:30:27 | INFO | Fetched from arXiv AI
+2026-05-11 23:30:29 | INFO | Fetched from arXiv ML
+2026-05-11 23:30:30 | INFO | Fetched from Hugging Face
+2026-05-11 23:30:32 | INFO | Fetched from OpenAI Blog
+2026-05-11 23:30:37 | INFO | Fetched from Google AI Blog
+2026-05-11 23:30:39 | INFO | Fetched from LangChain Blog
+2026-05-11 23:30:43 | INFO | Fetched from Anthropic Blog
+2026-05-11 23:30:44 | INFO | Fetched from VentureBeat AI
+2026-05-11 23:30:45 | INFO | Fetched from MIT Tech Review
+2026-05-11 23:30:46 | INFO | Fetched from IEEE Spectrum AI
+2026-05-11 23:30:50 | INFO | Fetched from Reddit ML
+2026-05-11 23:30:52 | INFO | Fetched from Reddit LocalLLaMA
+2026-05-11 23:30:52 | INFO | Total new articles: 50
+2026-05-11 23:30:53 | INFO | ✅ NeuraNews done in 29.65s
+2026-05-11 23:30:53 | INFO | 
+── Running NeuraWatch ──
+2026-05-11 23:30:53 | INFO | ▶ Starting NeuraWatch...
+2026-05-11 23:30:54 | INFO | NeuraWatch fetching company updates...
+2026-05-11 23:30:56 | INFO | Fetched from OpenAI
+2026-05-11 23:31:00 | INFO | Fetched from Anthropic
+2026-05-11 23:31:03 | INFO | Fetched from Google AI
+2026-05-11 23:31:04 | INFO | Fetched from Meta AI
+2026-05-11 23:31:05 | INFO | Fetched from Microsoft
+2026-05-11 23:31:06 | INFO | Fetched from DeepMind
+2026-05-11 23:31:07 | INFO | ✅ NeuraWatch done in 13.76s
+2026-05-11 23:31:07 | INFO | 
+✅ 6/6 agents completed
+2026-05-11 23:31:07 | INFO | NeuraCompose initialized with 6 agent results
+2026-05-11 23:31:07 | INFO | NeuraCompose starting...
+2026-05-11 23:31:07 | INFO | Combined 6 agent reports
+2026-05-11 23:31:07 | INFO | Generating unified report with Groq AI...
+2026-05-11 23:31:46 | INFO | Unified report generated!
+2026-05-11 23:31:46 | INFO | Delivering to channels...
+2026-05-11 23:31:50 | INFO | Email sent successfully!
+2026-05-11 23:32:15 | INFO | Calendar events added!
+2026-05-11 23:32:15 | INFO | NeuraCompose done! Report delivered.
+2026-05-11 23:32:15 | INFO | ⏱ run completed in 140.1s
+2026-05-11 23:37:25 | INFO | ✅ Config loaded successfully
+2026-05-11 23:37:25 | INFO | 🧠 NeuraCore initialized | Day: Monday | User: Vivek
+2026-05-11 23:37:25 | INFO | =======================================================
+2026-05-11 23:37:25 | INFO | 🚀 NeuraFlow pipeline starting...
+2026-05-11 23:37:25 | INFO | 👤 User   : Vivek
+2026-05-11 23:37:25 | INFO | 🎯 Goals  : ['get_ai_job', 'learn_ai', 'stay_updated']
+2026-05-11 23:37:25 | INFO | 📅 Day    : Monday
+2026-05-11 23:37:25 | INFO | =======================================================
+2026-05-11 23:37:25 | INFO | 📋 Agents to run today: ['NeuraCode', 'NeuraForge', 'NeuraJobs', 'NeuraLearn', 'NeuraNews', 'NeuraWatch']
+2026-05-11 23:37:25 | INFO | 
+── Running NeuraCode ──
+2026-05-11 23:37:25 | INFO | ▶ Starting NeuraCode...
+2026-05-11 23:37:25 | INFO | NeuraCode fetching GitHub trends...
+2026-05-11 23:37:27 | INFO | Fetched 3 repos for 'artificial intelligence'
+2026-05-11 23:37:28 | INFO | Fetched 3 repos for 'machine learning'
+2026-05-11 23:37:29 | INFO | Fetched 3 repos for 'large language model'
+2026-05-11 23:37:30 | INFO | Fetched 3 repos for 'langchain'
+2026-05-11 23:37:32 | INFO | ✅ NeuraCode done in 7.17s
+2026-05-11 23:37:32 | INFO | 
+── Running NeuraForge ──
+2026-05-11 23:37:32 | INFO | ▶ Starting NeuraForge...
+2026-05-11 23:37:32 | INFO | NeuraForge generating project ideas...
+2026-05-11 23:37:34 | INFO | ✅ NeuraForge done in 2.24s
+2026-05-11 23:37:34 | INFO | 
+── Running NeuraJobs ──
+2026-05-11 23:37:34 | INFO | ▶ Starting NeuraJobs...
+2026-05-11 23:37:34 | INFO | NeuraJobs starting...
+2026-05-11 23:37:35 | INFO | Fetched 0 jobs from Indeed AI Jobs
+2026-05-11 23:37:36 | INFO | Fetched 0 jobs from Indeed ML Jobs
+2026-05-11 23:37:36 | INFO | Fetched 0 jobs from Indeed Data Science
+2026-05-11 23:37:37 | INFO | Fetched 0 jobs from Indeed Python
+2026-05-11 23:37:37 | INFO | Fetched 0 jobs from Indeed LLM
+2026-05-11 23:37:41 | INFO | Fetched 5 jobs from RemoteOK AI
+2026-05-11 23:37:43 | INFO | Fetched 0 jobs from RemoteOK ML
+2026-05-11 23:37:44 | INFO | Fetched 0 jobs from RemoteOK Data
+2026-05-11 23:37:47 | INFO | Fetched 5 jobs from WeWorkRemotely
+2026-05-11 23:37:48 | INFO | Fetched 0 jobs from AI Jobs Board
+2026-05-11 23:37:49 | INFO | Fetched 0 jobs from HackerNews Jobs
+2026-05-11 23:37:49 | INFO | Total jobs fetched: 10
+2026-05-11 23:37:51 | INFO | NeuraJobs analysis done!
+2026-05-11 23:37:51 | INFO | ✅ NeuraJobs done in 17.08s
+2026-05-11 23:37:51 | INFO | 
+── Running NeuraLearn ──
+2026-05-11 23:37:51 | INFO | ▶ Starting NeuraLearn...
+2026-05-11 23:37:52 | INFO | NeuraLearn generating learning path...
+2026-05-11 23:37:54 | INFO | ✅ NeuraLearn done in 3.0s
+2026-05-11 23:37:54 | INFO | 
+── Running NeuraNews ──
+2026-05-11 23:37:54 | INFO | ▶ Starting NeuraNews...
+2026-05-11 23:37:55 | INFO | NeuraNews fetching articles...
+2026-05-11 23:37:58 | INFO | Fetched from arXiv AI
+2026-05-11 23:38:00 | INFO | Fetched from arXiv ML
+2026-05-11 23:38:01 | INFO | Fetched from Hugging Face
+2026-05-11 23:38:03 | INFO | Fetched from OpenAI Blog
+2026-05-11 23:38:07 | INFO | Fetched from Google AI Blog
+2026-05-11 23:38:09 | INFO | Fetched from LangChain Blog
+2026-05-11 23:38:13 | INFO | Fetched from Anthropic Blog
+2026-05-11 23:38:14 | INFO | Fetched from VentureBeat AI
+2026-05-11 23:38:15 | INFO | Fetched from MIT Tech Review
+2026-05-11 23:38:16 | INFO | Fetched from IEEE Spectrum AI
+2026-05-11 23:38:19 | INFO | Fetched from Reddit ML
+2026-05-11 23:38:20 | INFO | Fetched from Reddit LocalLLaMA
+2026-05-11 23:38:20 | INFO | Total new articles: 0
+2026-05-11 23:38:20 | INFO | ✅ NeuraNews done in 26.16s
+2026-05-11 23:38:20 | INFO | 
+── Running NeuraWatch ──
+2026-05-11 23:38:20 | INFO | ▶ Starting NeuraWatch...
+2026-05-11 23:38:21 | INFO | NeuraWatch fetching company updates...
+2026-05-11 23:38:23 | INFO | Fetched from OpenAI
+2026-05-11 23:38:29 | INFO | Fetched from Anthropic
+2026-05-11 23:38:33 | INFO | Fetched from Google AI
+2026-05-11 23:38:34 | INFO | Fetched from Meta AI
+2026-05-11 23:38:35 | INFO | Fetched from Microsoft
+2026-05-11 23:38:36 | INFO | Fetched from DeepMind
+2026-05-11 23:38:37 | INFO | ✅ NeuraWatch done in 17.13s
+2026-05-11 23:38:37 | INFO | 
+✅ 6/6 agents completed
+2026-05-11 23:38:38 | INFO | NeuraCompose initialized with 6 agent results
+2026-05-11 23:38:38 | INFO | NeuraCompose starting...
+2026-05-11 23:38:38 | INFO | Combined 6 agent reports
+2026-05-11 23:38:38 | INFO | Generating unified report with Groq AI...
+2026-05-11 23:38:50 | INFO | Unified report generated!
+2026-05-11 23:38:50 | INFO | Validating URLs...
+2026-05-11 23:38:50 | WARNING | URL unreachable: https://course.fast.ai — name 'requests' is not defined
+2026-05-11 23:38:50 | WARNING | URL unreachable: https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi — name 'requests' is not defined
+2026-05-11 23:38:50 | WARNING | URL unreachable: https://realpython.com/python-keras/ — name 'requests' is not defined
+2026-05-11 23:38:50 | WARNING | URL unreachable: https://docs.python.org/3/tutorial/modules.html — name 'requests' is not defined
+2026-05-11 23:38:50 | WARNING | URL unreachable: https://docs.python.org/3/tutorial/ — name 'requests' is not defined
+2026-05-11 23:38:50 | WARNING | URL unreachable: https://www.kaggle.com/learn — name 'requests' is not defined
+2026-05-11 23:38:50 | WARNING | URL unreachable: https://huggingface.co/learn/nlp-course — name 'requests' is not defined
+2026-05-11 23:38:50 | WARNING | URL unreachable: https://course.fast.ai — name 'requests' is not defined
+2026-05-11 23:38:50 | WARNING | URL unreachable: https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi — name 'requests' is not defined
+2026-05-11 23:38:50 | WARNING | URL unreachable: https://realpython.com/python-keras/ — name 'requests' is not defined
+2026-05-11 23:38:50 | INFO | URL validation done!
+2026-05-11 23:38:50 | INFO | Delivering to channels...
+2026-05-11 23:38:55 | INFO | Email sent successfully!
+2026-05-11 23:39:07 | INFO | Calendar events added!
+2026-05-11 23:39:07 | INFO | NeuraCompose done! Report delivered.
+2026-05-11 23:39:07 | INFO | ⏱ run completed in 102.08s
+2026-05-11 23:41:21 | INFO | ✅ Config loaded successfully
+2026-05-11 23:41:21 | INFO | 🧠 NeuraCore initialized | Day: Monday | User: Vivek
+2026-05-11 23:41:21 | INFO | =======================================================
+2026-05-11 23:41:21 | INFO | 🚀 NeuraFlow pipeline starting...
+2026-05-11 23:41:21 | INFO | 👤 User   : Vivek
+2026-05-11 23:41:21 | INFO | 🎯 Goals  : ['get_ai_job', 'learn_ai', 'stay_updated']
+2026-05-11 23:41:21 | INFO | 📅 Day    : Monday
+2026-05-11 23:41:21 | INFO | =======================================================
+2026-05-11 23:41:21 | INFO | 📋 Agents to run today: ['NeuraCode', 'NeuraForge', 'NeuraJobs', 'NeuraLearn', 'NeuraNews', 'NeuraWatch']
+2026-05-11 23:41:21 | INFO | 
+── Running NeuraCode ──
+2026-05-11 23:41:21 | INFO | ▶ Starting NeuraCode...
+2026-05-11 23:41:22 | INFO | NeuraCode fetching GitHub trends...
+2026-05-11 23:41:23 | INFO | Fetched 3 repos for 'artificial intelligence'
+2026-05-11 23:41:24 | INFO | Fetched 3 repos for 'machine learning'
+2026-05-11 23:41:25 | INFO | Fetched 3 repos for 'large language model'
+2026-05-11 23:41:26 | INFO | Fetched 3 repos for 'langchain'
+2026-05-11 23:41:27 | INFO | ✅ NeuraCode done in 6.44s
+2026-05-11 23:41:27 | INFO | 
+── Running NeuraForge ──
+2026-05-11 23:41:27 | INFO | ▶ Starting NeuraForge...
+2026-05-11 23:41:28 | INFO | NeuraForge generating project ideas...
+2026-05-11 23:41:30 | INFO | ✅ NeuraForge done in 2.14s
+2026-05-11 23:41:30 | INFO | 
+── Running NeuraJobs ──
+2026-05-11 23:41:30 | INFO | ▶ Starting NeuraJobs...
+2026-05-11 23:41:30 | INFO | NeuraJobs starting...
+2026-05-11 23:41:31 | INFO | Fetched 0 jobs from Indeed AI Jobs
+2026-05-11 23:41:31 | INFO | Fetched 0 jobs from Indeed ML Jobs
+2026-05-11 23:41:32 | INFO | Fetched 0 jobs from Indeed Data Science
+2026-05-11 23:41:32 | INFO | Fetched 0 jobs from Indeed Python
+2026-05-11 23:41:33 | INFO | Fetched 0 jobs from Indeed LLM
+2026-05-11 23:41:36 | INFO | Fetched 5 jobs from RemoteOK AI
+2026-05-11 23:41:37 | INFO | Fetched 0 jobs from RemoteOK ML
+2026-05-11 23:41:39 | INFO | Fetched 0 jobs from RemoteOK Data
+2026-05-11 23:41:41 | INFO | Fetched 5 jobs from WeWorkRemotely
+2026-05-11 23:41:42 | INFO | Fetched 0 jobs from AI Jobs Board
+2026-05-11 23:41:43 | INFO | Fetched 0 jobs from HackerNews Jobs
+2026-05-11 23:41:43 | INFO | Total jobs fetched: 10
+2026-05-11 23:41:45 | INFO | NeuraJobs analysis done!
+2026-05-11 23:41:45 | INFO | ✅ NeuraJobs done in 15.07s
+2026-05-11 23:41:45 | INFO | 
+── Running NeuraLearn ──
+2026-05-11 23:41:45 | INFO | ▶ Starting NeuraLearn...
+2026-05-11 23:41:45 | INFO | NeuraLearn generating learning path...
+2026-05-11 23:41:46 | INFO | NeuraLearn done! Picked 3 verified resources
+2026-05-11 23:41:46 | INFO | ✅ NeuraLearn done in 1.57s
+2026-05-11 23:41:46 | INFO | 
+── Running NeuraNews ──
+2026-05-11 23:41:46 | INFO | ▶ Starting NeuraNews...
+2026-05-11 23:41:47 | INFO | NeuraNews fetching articles...
+2026-05-11 23:41:49 | INFO | Fetched from arXiv AI
+2026-05-11 23:41:51 | INFO | Fetched from arXiv ML
+2026-05-11 23:41:52 | INFO | Fetched from Hugging Face
+2026-05-11 23:41:54 | INFO | Fetched from OpenAI Blog
+2026-05-11 23:41:58 | INFO | Fetched from Google AI Blog
+2026-05-11 23:42:00 | INFO | Fetched from LangChain Blog
+2026-05-11 23:42:05 | INFO | Fetched from Anthropic Blog
+2026-05-11 23:42:06 | INFO | Fetched from VentureBeat AI
+2026-05-11 23:42:07 | INFO | Fetched from MIT Tech Review
+2026-05-11 23:42:10 | INFO | Fetched from IEEE Spectrum AI
+2026-05-11 23:42:11 | INFO | Fetched from Reddit ML
+2026-05-11 23:42:13 | INFO | Fetched from Reddit LocalLLaMA
+2026-05-11 23:42:13 | INFO | Total new articles: 0
+2026-05-11 23:42:13 | INFO | ✅ NeuraNews done in 26.95s
+2026-05-11 23:42:13 | INFO | 
+── Running NeuraWatch ──
+2026-05-11 23:42:13 | INFO | ▶ Starting NeuraWatch...
+2026-05-11 23:42:14 | INFO | NeuraWatch fetching company updates...
+2026-05-11 23:42:15 | INFO | Fetched from OpenAI
+2026-05-11 23:42:21 | INFO | Fetched from Anthropic
+2026-05-11 23:42:25 | INFO | Fetched from Google AI
+2026-05-11 23:42:26 | INFO | Fetched from Meta AI
+2026-05-11 23:42:27 | INFO | Fetched from Microsoft
+2026-05-11 23:42:28 | INFO | Fetched from DeepMind
+2026-05-11 23:42:29 | INFO | ✅ NeuraWatch done in 15.32s
+2026-05-11 23:42:29 | INFO | 
+✅ 6/6 agents completed
+2026-05-11 23:42:29 | INFO | NeuraCompose initialized with 6 agent results
+2026-05-11 23:42:29 | INFO | NeuraCompose starting...
+2026-05-11 23:42:29 | INFO | Combined 6 agent reports
+2026-05-11 23:42:29 | INFO | Generating unified report with Groq AI...
+2026-05-11 23:42:31 | INFO | Unified report generated!
+2026-05-11 23:42:31 | INFO | Validating URLs...
+2026-05-11 23:42:33 | INFO | URL OK: https://course.fast.ai
+2026-05-11 23:42:35 | INFO | URL OK: https://developers.google.com/machine-learning/crash-course
+2026-05-11 23:42:36 | WARNING | URL dead (404): https://www.kaggle.com/learn
+2026-05-11 23:42:36 | INFO | URL validation done!
+2026-05-11 23:42:36 | INFO | Delivering to channels...
+2026-05-11 23:42:40 | INFO | Email sent successfully!
+2026-05-11 23:42:52 | INFO | Calendar events added!
+2026-05-11 23:42:52 | INFO | NeuraCompose done! Report delivered.
+2026-05-11 23:42:52 | INFO | ⏱ run completed in 90.85s
+2026-05-11 23:48:05 | INFO | ✅ Config loaded successfully
+2026-05-11 23:48:05 | INFO | 🧠 NeuraCore initialized | Day: Monday | User: Vivek
+2026-05-11 23:48:05 | INFO | =======================================================
+2026-05-11 23:48:05 | INFO | 🚀 NeuraFlow pipeline starting...
+2026-05-11 23:48:05 | INFO | 👤 User   : Vivek
+2026-05-11 23:48:05 | INFO | 🎯 Goals  : ['get_ai_job', 'learn_ai', 'stay_updated']
+2026-05-11 23:48:05 | INFO | 📅 Day    : Monday
+2026-05-11 23:48:05 | INFO | =======================================================
+2026-05-11 23:48:05 | INFO | 📋 Agents to run today: ['NeuraCode', 'NeuraForge', 'NeuraJobs', 'NeuraLearn', 'NeuraNews', 'NeuraWatch']
+2026-05-11 23:48:05 | INFO | 
+── Running NeuraCode ──
+2026-05-11 23:48:05 | INFO | ▶ Starting NeuraCode...
+2026-05-11 23:48:06 | INFO | NeuraCode fetching GitHub trends...
+2026-05-11 23:48:07 | INFO | Fetched 3 repos for 'artificial intelligence'
+2026-05-11 23:48:08 | INFO | Fetched 3 repos for 'machine learning'
+2026-05-11 23:48:09 | INFO | Fetched 3 repos for 'large language model'
+2026-05-11 23:48:10 | INFO | Fetched 3 repos for 'langchain'
+2026-05-11 23:48:12 | INFO | ✅ NeuraCode done in 7.12s
+2026-05-11 23:48:12 | INFO | 
+── Running NeuraForge ──
+2026-05-11 23:48:12 | INFO | ▶ Starting NeuraForge...
+2026-05-11 23:48:12 | INFO | NeuraForge generating project ideas...
+2026-05-11 23:48:14 | INFO | ✅ NeuraForge done in 2.21s
+2026-05-11 23:48:14 | INFO | 
+── Running NeuraJobs ──
+2026-05-11 23:48:14 | INFO | ▶ Starting NeuraJobs...
+2026-05-11 23:48:15 | INFO | NeuraJobs starting...
+2026-05-11 23:48:15 | INFO | Fetched 0 jobs from Indeed AI Jobs
+2026-05-11 23:48:16 | INFO | Fetched 0 jobs from Indeed ML Jobs
+2026-05-11 23:48:16 | INFO | Fetched 0 jobs from Indeed Data Science
+2026-05-11 23:48:17 | INFO | Fetched 0 jobs from Indeed Python
+2026-05-11 23:48:17 | INFO | Fetched 0 jobs from Indeed LLM
+2026-05-11 23:48:21 | INFO | Fetched 5 jobs from RemoteOK AI
+2026-05-11 23:48:25 | INFO | Fetched 0 jobs from RemoteOK ML
+2026-05-11 23:48:26 | INFO | Fetched 0 jobs from RemoteOK Data
+2026-05-11 23:48:28 | INFO | Fetched 5 jobs from WeWorkRemotely
+2026-05-11 23:48:29 | INFO | Fetched 0 jobs from AI Jobs Board
+2026-05-11 23:48:30 | INFO | Fetched 0 jobs from HackerNews Jobs
+2026-05-11 23:48:30 | INFO | Total jobs fetched: 10
+2026-05-11 23:48:31 | INFO | NeuraJobs analysis done!
+2026-05-11 23:48:31 | INFO | ✅ NeuraJobs done in 17.1s
+2026-05-11 23:48:31 | INFO | 
+── Running NeuraLearn ──
+2026-05-11 23:48:31 | INFO | ▶ Starting NeuraLearn...
+2026-05-11 23:48:32 | INFO | NeuraLearn generating learning path...
+2026-05-11 23:48:33 | INFO | NeuraLearn done! Picked 3 verified resources
+2026-05-11 23:48:33 | INFO | ✅ NeuraLearn done in 1.47s
+2026-05-11 23:48:33 | INFO | 
+── Running NeuraNews ──
+2026-05-11 23:48:33 | INFO | ▶ Starting NeuraNews...
+2026-05-11 23:48:33 | INFO | NeuraNews fetching articles...
+2026-05-11 23:48:36 | INFO | Fetched from arXiv AI
+2026-05-11 23:48:38 | INFO | Fetched from arXiv ML
+2026-05-11 23:48:39 | INFO | Fetched from Hugging Face
+2026-05-11 23:48:41 | INFO | Fetched from OpenAI Blog
+2026-05-11 23:48:45 | INFO | Fetched from Google AI Blog
+2026-05-11 23:48:47 | INFO | Fetched from LangChain Blog
+2026-05-11 23:48:53 | INFO | Fetched from Anthropic Blog
+2026-05-11 23:48:54 | INFO | Fetched from VentureBeat AI
+2026-05-11 23:48:55 | INFO | Fetched from MIT Tech Review
+2026-05-11 23:48:56 | INFO | Fetched from IEEE Spectrum AI
+2026-05-11 23:48:58 | INFO | Fetched from Reddit ML
+2026-05-11 23:49:01 | INFO | Fetched from Reddit LocalLLaMA
+2026-05-11 23:49:01 | INFO | Total new articles: 0
+2026-05-11 23:49:01 | INFO | ✅ NeuraNews done in 27.65s
+2026-05-11 23:49:01 | INFO | 
+── Running NeuraWatch ──
+2026-05-11 23:49:01 | INFO | ▶ Starting NeuraWatch...
+2026-05-11 23:49:01 | INFO | NeuraWatch fetching company updates...
+2026-05-11 23:49:03 | INFO | Fetched from OpenAI
+2026-05-11 23:49:08 | INFO | Fetched from Anthropic
+2026-05-11 23:49:11 | INFO | Fetched from Google AI
+2026-05-11 23:49:13 | INFO | Fetched from Meta AI
+2026-05-11 23:49:14 | INFO | Fetched from Microsoft
+2026-05-11 23:49:15 | INFO | Fetched from DeepMind
+2026-05-11 23:49:16 | INFO | ✅ NeuraWatch done in 15.84s
+2026-05-11 23:49:16 | INFO | 
+✅ 6/6 agents completed
+2026-05-11 23:49:17 | INFO | NeuraCompose initialized with 6 agent results
+2026-05-11 23:49:17 | INFO | NeuraCompose starting...
+2026-05-11 23:49:17 | INFO | Combined 6 agent reports
+2026-05-11 23:49:17 | INFO | Generating unified report with Groq AI...
+2026-05-11 23:49:25 | INFO | Unified report generated!
+2026-05-11 23:49:25 | INFO | Validating URLs...
+2026-05-11 23:49:26 | INFO | URL OK: https://github.com/langchain-ai/langchain
+2026-05-11 23:49:28 | INFO | URL OK: https://github.com/tensorflow/tensorflow
+2026-05-11 23:49:29 | INFO | URL OK: https://github.com/huggingface/transformers
+2026-05-11 23:49:31 | INFO | URL OK: https://python.langchain.com/docs/get_started/introduction
+2026-05-11 23:49:33 | INFO | URL OK: https://huggingface.co/learn/nlp-course
+2026-05-11 23:49:34 | INFO | URL OK: https://www.deeplearning.ai/courses
+2026-05-11 23:49:34 | INFO | URL validation done!
+2026-05-11 23:49:34 | INFO | Delivering to channels...
+2026-05-11 23:49:39 | INFO | Email sent successfully!
+2026-05-11 23:49:48 | ERROR | Calendar failed: 'NoneType' object has no attribute 'strip'
+2026-05-11 23:49:48 | INFO | NeuraCompose done! Report delivered.
+2026-05-11 23:49:48 | INFO | ⏱ run completed in 102.75s
+2026-05-11 23:50:16 | INFO | ✅ Config loaded successfully
+2026-05-11 23:50:16 | INFO | 🧠 NeuraCore initialized | Day: Monday | User: Vivek
+2026-05-11 23:50:16 | INFO | =======================================================
+2026-05-11 23:50:16 | INFO | 🚀 NeuraFlow pipeline starting...
+2026-05-11 23:50:16 | INFO | 👤 User   : Vivek
+2026-05-11 23:50:16 | INFO | 🎯 Goals  : ['get_ai_job', 'learn_ai', 'stay_updated']
+2026-05-11 23:50:16 | INFO | 📅 Day    : Monday
+2026-05-11 23:50:16 | INFO | =======================================================
+2026-05-11 23:50:16 | INFO | 📋 Agents to run today: ['NeuraCode', 'NeuraForge', 'NeuraJobs', 'NeuraLearn', 'NeuraNews', 'NeuraWatch']
+2026-05-11 23:50:16 | INFO | 
+── Running NeuraCode ──
+2026-05-11 23:50:16 | INFO | ▶ Starting NeuraCode...
+2026-05-11 23:50:17 | INFO | NeuraCode fetching GitHub trends...
+2026-05-11 23:50:18 | INFO | Fetched 3 repos for 'artificial intelligence'
+2026-05-11 23:50:19 | INFO | Fetched 3 repos for 'machine learning'
+2026-05-11 23:50:20 | INFO | Fetched 3 repos for 'large language model'
+2026-05-11 23:50:21 | INFO | Fetched 3 repos for 'langchain'
+2026-05-11 23:50:22 | INFO | ✅ NeuraCode done in 6.55s
+2026-05-11 23:50:22 | INFO | 
+── Running NeuraForge ──
+2026-05-11 23:50:22 | INFO | ▶ Starting NeuraForge...
+2026-05-11 23:50:23 | INFO | NeuraForge generating project ideas...
+2026-05-11 23:50:25 | INFO | ✅ NeuraForge done in 2.36s
+2026-05-11 23:50:25 | INFO | 
+── Running NeuraJobs ──
+2026-05-11 23:50:25 | INFO | ▶ Starting NeuraJobs...
+2026-05-11 23:50:25 | INFO | NeuraJobs starting...
+2026-05-11 23:50:26 | INFO | Fetched 0 jobs from Indeed AI Jobs
+2026-05-11 23:50:26 | INFO | Fetched 0 jobs from Indeed ML Jobs
+2026-05-11 23:50:27 | INFO | Fetched 0 jobs from Indeed Data Science
+2026-05-11 23:50:27 | INFO | Fetched 0 jobs from Indeed Python
+2026-05-11 23:50:28 | INFO | Fetched 0 jobs from Indeed LLM
+2026-05-11 23:50:32 | INFO | Fetched 5 jobs from RemoteOK AI
+2026-05-11 23:50:33 | INFO | Fetched 0 jobs from RemoteOK ML
+2026-05-11 23:50:35 | INFO | Fetched 0 jobs from RemoteOK Data
+2026-05-11 23:50:37 | INFO | Fetched 5 jobs from WeWorkRemotely
+2026-05-11 23:50:39 | INFO | Fetched 0 jobs from AI Jobs Board
+2026-05-11 23:50:41 | INFO | Fetched 0 jobs from HackerNews Jobs
+2026-05-11 23:50:41 | INFO | Total jobs fetched: 10
+2026-05-11 23:50:42 | INFO | NeuraJobs analysis done!
+2026-05-11 23:50:42 | INFO | ✅ NeuraJobs done in 17.1s
+2026-05-11 23:50:42 | INFO | 
+── Running NeuraLearn ──
+2026-05-11 23:50:42 | INFO | ▶ Starting NeuraLearn...
+2026-05-11 23:50:42 | INFO | NeuraLearn generating learning path...
+2026-05-11 23:50:43 | INFO | NeuraLearn done! Picked 3 verified resources
+2026-05-11 23:50:43 | INFO | ✅ NeuraLearn done in 1.42s
+2026-05-11 23:50:43 | INFO | 
+── Running NeuraNews ──
+2026-05-11 23:50:43 | INFO | ▶ Starting NeuraNews...
+2026-05-11 23:50:44 | INFO | NeuraNews fetching articles...
+2026-05-11 23:50:47 | INFO | Fetched from arXiv AI
+2026-05-11 23:50:52 | INFO | Fetched from arXiv ML
+2026-05-11 23:50:53 | INFO | Fetched from Hugging Face
+2026-05-11 23:50:56 | INFO | Fetched from OpenAI Blog
+2026-05-11 23:51:00 | INFO | Fetched from Google AI Blog
+2026-05-11 23:51:02 | INFO | Fetched from LangChain Blog
+2026-05-11 23:51:08 | INFO | Fetched from Anthropic Blog
+2026-05-11 23:51:09 | INFO | Fetched from VentureBeat AI
+2026-05-11 23:51:10 | INFO | Fetched from MIT Tech Review
+2026-05-11 23:51:12 | INFO | Fetched from IEEE Spectrum AI
+2026-05-11 23:51:14 | INFO | Fetched from Reddit ML
+2026-05-11 23:51:16 | INFO | Fetched from Reddit LocalLLaMA
+2026-05-11 23:51:16 | INFO | Total new articles: 0
+2026-05-11 23:51:16 | INFO | ✅ NeuraNews done in 32.26s
+2026-05-11 23:51:16 | INFO | 
+── Running NeuraWatch ──
+2026-05-11 23:51:16 | INFO | ▶ Starting NeuraWatch...
+2026-05-11 23:51:16 | INFO | NeuraWatch fetching company updates...
+2026-05-11 23:51:18 | INFO | Fetched from OpenAI
+2026-05-11 23:51:23 | INFO | Fetched from Anthropic
+2026-05-11 23:51:27 | INFO | Fetched from Google AI
+2026-05-11 23:51:28 | INFO | Fetched from Meta AI
+2026-05-11 23:51:29 | INFO | Fetched from Microsoft
+2026-05-11 23:51:31 | INFO | Fetched from DeepMind
+2026-05-11 23:51:32 | INFO | ✅ NeuraWatch done in 16.71s
+2026-05-11 23:51:32 | INFO | 
+✅ 6/6 agents completed
+2026-05-11 23:51:33 | INFO | NeuraCompose initialized with 6 agent results
+2026-05-11 23:51:33 | INFO | NeuraCompose starting...
+2026-05-11 23:51:33 | INFO | Combined 6 agent reports
+2026-05-11 23:51:33 | INFO | Generating unified report with Groq AI...
+2026-05-11 23:51:34 | INFO | Unified report generated!
+2026-05-11 23:51:34 | INFO | Validating URLs...
+2026-05-11 23:51:36 | INFO | URL OK: https://python.langchain.com/docs/get_started/introduction
+2026-05-11 23:51:37 | WARNING | URL dead (404): https://www.kaggle.com/learn
+2026-05-11 23:51:38 | INFO | URL OK: https://www.deeplearning.ai/courses
+2026-05-11 23:51:38 | INFO | URL validation done!
+2026-05-11 23:51:38 | INFO | Delivering to channels...
+2026-05-11 23:51:42 | INFO | Email sent successfully!
+2026-05-11 23:51:50 | ERROR | Calendar failed: 'NoneType' object has no attribute 'strip'
+2026-05-11 23:51:50 | INFO | NeuraCompose done! Report delivered.
+2026-05-11 23:51:50 | INFO | ⏱ run completed in 94.04s
