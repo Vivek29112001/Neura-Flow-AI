@@ -412,16 +412,15 @@ Distributed under the MIT License. See `LICENSE` file for more information.
 ## 👤 Author
 
 **Vivek Sharma**
-- 🔗 GitHub: [@Vivek29112001](https://github.com/Vivek29112001)
-- 💼 LinkedIn: [viveksharma2911](https://linkedin.com/in/viveksharma2911)
-- 🌐 Portfolio: [viveksharma.dev](https://viveksharma.dev)
+- 🔗 GitHub: [@Vivek29112001](https://github.com/Vivek29112001/)
+- 💼 LinkedIn: [viveksharma2911](https://www.linkedin.com/in/vivek2911/)
+- 🌐 Portfolio: [viveksharma.dev](https://workwithvivek.netlify.app/)
 
 ---
 
 ## 💬 Support & Feedback
 
-- 📧 Email: vivek@example.com
-- 💬 Twitter: [@vivek_code](https://twitter.com/vivek_code)
+- 📧 Email: vivek15292001@gmail.com
 - 🤝 Join our Discord community (coming soon)
 
 ---
