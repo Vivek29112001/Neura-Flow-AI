@@ -1,9 +1,8 @@
-<<<<<<< HEAD
-# 🤖 NeuraFlow — Personal AI Learning Intelligence System
+# 🤖 NeuraFlow — Multi-Agent AI Intelligence System
 
-> Stay updated with AI every day. Automatically.
+> Your AI-powered personal assistant for learning, jobs, research, and staying updated.
 
-![Version](https://img.shields.io/badge/version-1.0.0-purple)
+![Version](https://img.shields.io/badge/version-2.0.0-purple)
 ![Python](https://img.shields.io/badge/python-3.10+-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Status](https://img.shields.io/badge/status-active-brightgreen)
@@ -12,27 +11,44 @@
 
 ## 🧠 What is NeuraFlow?
 
-**NeuraFlow** is a fully automated Personal AI Learning Intelligence System that runs 24/7 on the cloud.
+**NeuraFlow** is a fully automated Multi-Agent AI Intelligence System that runs 24/7 on the cloud, powered by **NeuraCore** — a master orchestrator.
 
-Every morning at **7:00 AM IST**, NeuraFlow automatically:
+Every day at **7:00 AM IST**, NeuraFlow automatically activates specialized AI agents based on your goals:
 
-- 📰 Scrapes **20+ sources** — arXiv, IEEE Spectrum, Hugging Face, OpenAI, LangChain, Reddit, VentureBeat & more
-- 🤖 Uses **Groq's LLaMA 3.1** to generate a personalized daily AI learning report
-- 📧 Delivers a **beautiful digest** to your Gmail inbox
-- 📅 Adds a **7-day learning plan** to your Google Calendar
+- 📰 **NeuraNews** — Scrapes **20+ AI sources** for latest updates
+- 💼 **NeuraJobs** — Finds AI/ML job opportunities tailored to you
+- 🎓 **NeuraLearn** — Creates personalized learning roadmaps
+- 💻 **NeuraCode** — Tracks GitHub trends and project ideas
+- 🏢 **NeuraWatch** — Monitors AI companies & market intelligence
+- 🚀 **NeuraForge** — Generates innovative project ideas
+- 🧠 **NeuraCore** — Master orchestrator that decides which agents run
+- 📧 Delivers **beautiful digests** to your Gmail inbox
+- 📅 Adds **learning plans** to your Google Calendar
 - ☁️ Runs **24/7 on Railway cloud** — even when your laptop is off!
 
 ---
 
-## ❌ The Problem
+## 🎯 Key Features
 
-AI and technology is evolving faster than ever.
-New models, new tools, new research papers — every single day.
-Most of us struggle to keep up and end up falling behind without even realizing it.
+### 🤖 Multi-Agent Architecture
+- **Specialized agents** for different domains (news, jobs, learning, coding, companies, ideas)
+- **NeuraCore** — intelligent orchestrator that selects which agents to run
+- **Goal-based execution** — runs agents based on YOUR personal goals
 
-## ✅ The Solution
+### 🗓️ Smart Scheduling
+- **Day-based scheduling** — Different agents run on different days
+- **Goal-based scheduling** — Choose "get_ai_job", "learn_ai", "ai_research", etc.
+- **Automatic execution** — Runs every morning at 7:00 AM IST without user intervention
 
-NeuraFlow is an AI Agent that stays updated with the latest technology — and keeps YOU updated too!
+### 📧 Multi-Channel Delivery
+- Gmail inbox notifications with beautifully formatted reports
+- Google Calendar integration with actionable learning plans
+- SQLite database for persistent tracking and history
+
+### ⚡ Powered by Groq
+- Ultra-fast AI processing using **Groq's LLaMA 3.1** model
+- Sub-second response times for real-time insights
+- Cost-effective cloud deployment
 
 ---
 
@@ -41,11 +57,15 @@ NeuraFlow is an AI Agent that stays updated with the latest technology — and k
 | Layer | Technology |
 |---|---|
 | AI Brain | Groq API — LLaMA 3.1 |
+| Orchestration | NeuraCore (Master Orchestrator) |
+| Agents | Modular agent architecture (News, Jobs, Learning, Code, Watch, Forge) |
 | Scheduler | APScheduler |
 | Email | Gmail SMTP |
 | Calendar | Google Calendar API |
 | Database | SQLite + SQLAlchemy |
-| News Sources | feedparser (RSS) |
+| News Sources | feedparser (RSS) + requests |
+| API Server | FastAPI + Uvicorn |
+| Logging | Custom Logger with decorators |
 | Deployment | Railway.app |
 | Language | Python 3.10+ |
 
@@ -54,18 +74,33 @@ NeuraFlow is an AI Agent that stays updated with the latest technology — and k
 ## 📁 Project Structure
 
 ```
-ai-learning-agent/
+neura-flow/
 ├── app/
-│   ├── database.py          # SQLite database setup
-│   ├── fetcher.py           # RSS feed scraper (20+ sources)
-│   ├── summarizer.py        # Groq AI report generator
-│   ├── notifier.py          # Gmail email sender
-│   ├── calendar_helper.py   # Google Calendar integration
-│   └── scheduler.py         # Daily 7AM automation
-├── .env                     # API keys (never commit!)
+│   ├── agents/                    # Specialized AI agents
+│   │   ├── news_agent.py         # Fetches AI news from 20+ sources
+│   │   ├── job_agent.py          # Finds AI/ML job opportunities
+│   │   ├── learning_agent.py     # Creates learning plans
+│   │   ├── github_agent.py       # Tracks GitHub & code trends
+│   │   ├── company_agent.py      # Monitors companies & market
+│   │   └── project_agent.py      # Generates project ideas
+│   ├── core/                      # Core utilities
+│   │   ├── orchestrator.py       # NeuraCore - Master orchestrator
+│   │   ├── logger.py             # Custom logging setup
+│   │   └── decorators.py         # Retry, timer, safe_run decorators
+│   ├── compose/
+│   │   └── composer.py           # Result composition & formatting
+│   ├── config/
+│   │   └── user_config.json      # User preferences & goals
+│   ├── logs/                      # Application logs
+│   ├── database.py               # SQLite database setup
+│   ├── scheduler.py              # Daily 7AM automation
+│   ├── calendar_helper.py        # Google Calendar integration
+│   ├── notifier.py               # Gmail email sender
+│   └── test_pipeline.py          # Testing & debugging
+├── railway.json                  # Railway deployment config
+├── requirements.txt              # Python dependencies
+├── .env                          # API keys (never commit!)
 ├── .gitignore
-├── railway.json             # Railway deployment config
-├── requirements.txt         # Python dependencies
 └── README.md
 ```
 
@@ -102,94 +137,182 @@ pip install -r requirements.txt
 
 ```bash
 cp .env.example .env
-# Fill in your API keys in .env
+# Fill in your API keys:
+# - GROQ_API_KEY (from console.groq.com)
+# - GMAIL_ADDRESS & GMAIL_APP_PASSWORD
+# - GOOGLE_CREDENTIALS_PATH
+# - GOOGLE_CALENDAR_ID
 ```
 
-### 5. Setup Google Calendar
+### 5. Setup Google Calendar Integration
 
 ```bash
-# Place your google_credentials.json inside app/ folder
-# Then run to authenticate:
+# Place google_credentials.json in app/ folder
 cd app
 python calendar_helper.py
 ```
 
-### 6. Run NeuraFlow
+### 6. Configure User Goals
+
+Edit `app/config/user_config.json`:
+
+```json
+{
+  "user_goal": "get_ai_job",
+  "preferences": {
+    "learning_style": "practical",
+    "preferred_companies": ["OpenAI", "DeepMind", "Meta"],
+    "interests": ["LLMs", "Agents", "RAG"]
+  }
+}
+```
+
+### 7. Run NeuraFlow
 
 ```bash
 cd app
 python scheduler.py
 ```
 
+NeuraFlow will run immediately and then automatically at 7:00 AM IST daily!
+
 ---
 
 ## 🔑 Environment Variables
 
-See [`.env.example`](.env.example) for all required variables.
+Create a `.env` file in the root directory:
 
-| Variable | Description | How to Get |
-|---|---|---|
-| `GROQ_API_KEY` | Groq AI API key | [console.groq.com](https://console.groq.com) |
-| `GMAIL_ADDRESS` | Your Gmail address | Your Google account |
-| `GMAIL_APP_PASSWORD` | Gmail App Password | [myaccount.google.com/apppasswords](https://myaccount.google.com/apppasswords) |
-| `GOOGLE_CREDENTIALS_PATH` | Path to Google credentials JSON | Google Cloud Console |
-| `GOOGLE_CALENDAR_ID` | Calendar ID (use `primary`) | Google Calendar settings |
+```bash
+# Groq API
+GROQ_API_KEY=your_groq_api_key_here
 
----
+# Gmail
+GMAIL_ADDRESS=your_email@gmail.com
+GMAIL_APP_PASSWORD=your_app_password_here
 
-## 📰 News Sources
+# Google
+GOOGLE_CREDENTIALS_PATH=app/google_credentials.json
+GOOGLE_CALENDAR_ID=primary
 
-NeuraFlow fetches from **20+ sources** daily:
+# Optional
+LOG_LEVEL=INFO
+DEBUG=False
+```
 
-**Research Papers**
-- arXiv AI, ML, CV, NLP
-- Papers With Code
-- IEEE Spectrum AI
+### Getting API Keys
 
-**AI Companies**
-- Hugging Face Blog
-- OpenAI Blog
-- Google AI Blog
-- Anthropic Blog
-- Meta AI Blog
-- Microsoft AI Blog
-- DeepMind Blog
-- LangChain Blog
-
-**AI News**
-- VentureBeat AI
-- MIT Technology Review
-- The Verge AI
-- Wired AI
-- TechCrunch AI
-- Towards Data Science
-
-**Community**
-- Reddit r/MachineLearning
-- Reddit r/LocalLLaMA
-- Reddit r/artificial
+| Variable | How to Get |
+|---|---|
+| `GROQ_API_KEY` | [console.groq.com](https://console.groq.com) → Create API key |
+| `GMAIL_APP_PASSWORD` | [myaccount.google.com/apppasswords](https://myaccount.google.com/apppasswords) |
+| `GOOGLE_CREDENTIALS_PATH` | [console.cloud.google.com](https://console.cloud.google.com) → Create OAuth 2.0 credentials |
+| `GOOGLE_CALENDAR_ID` | Google Calendar settings → Calendar ID (use `primary` for default)
 
 ---
 
-## 📧 Daily Report Format
+## 🤖 NeuraFlow Agents
 
-Each morning you receive:
+### 📰 NeuraNews Agent
+Fetches AI/ML news from **20+ premium sources**:
+- **Research Papers**: arXiv, Papers With Code, IEEE Spectrum
+- **AI Companies**: Hugging Face, OpenAI, Google AI, Anthropic, Meta AI, Microsoft AI, DeepMind, LangChain
+- **AI News**: VentureBeat, MIT Tech Review, The Verge, Wired, TechCrunch, Towards Data Science
+- **Community**: Reddit r/MachineLearning, r/LocalLLaMA, r/artificial
+
+### 💼 NeuraJobs Agent
+Tracks job opportunities in AI/ML from:
+- LinkedIn jobs (filtered by skills)
+- Hacker News jobs
+- Indeed AI/ML roles
+- Personalized recommendations based on your profile
+
+### 🎓 NeuraLearn Agent
+Creates personalized learning plans:
+- Suggests daily learning topics
+- Recommends courses & resources
+- Tracks your learning progress
+- Builds custom roadmaps based on goals
+
+### 💻 NeuraCode Agent
+Monitors GitHub & coding trends:
+- Trending repositories
+- Latest open-source projects
+- Popular coding frameworks
+- Developer insights & statistics
+
+### 🏢 NeuraWatch Agent
+Company & market intelligence:
+- AI company news & funding rounds
+- Startup developments
+- Market trends & competitive analysis
+- Industry reports
+
+### 🚀 NeuraForge Agent
+Generates innovative project ideas:
+- AI project suggestions based on trends
+- Starter projects for learning
+- Production ideas based on your skills
+- Hackathon ideas
+
+---
+
+## 🧠 NeuraCore — Master Orchestrator
+
+NeuraCore intelligently decides which agents to run based on:
+
+### 📅 Day-Based Schedule
+```
+Monday    → News, Jobs, Learning, Code, Watch, Forge
+Tuesday   → News, Jobs
+Wednesday → Learning, Code
+Thursday  → News, Watch
+Friday    → Jobs, Forge
+Saturday  → Learning, News
+Sunday    → News, Jobs, Learning
+```
+
+### 🎯 Goal-Based Agent Selection
+```
+get_ai_job       → Jobs, Learning, Code, Watch
+learn_ai         → Learning, News, Forge
+ai_research      → News, Learning, Code
+build_startup    → Forge, News, Watch
+stay_updated     → News, Watch, Code
+freelancing      → Jobs, Forge, Code
+```
+
+The core reads your `user_config.json` and intelligently selects the best agents for your needs!
+
+---
+
+## 📧 Report Format
+
+Each morning you receive multi-agent reports:
 
 ```
-📰 TOP 5 HIGHLIGHTS
-   Most important AI updates of the day
+🤖 NEURAFLOW DAILY DIGEST
+━━━━━━━━━━━━━━━━━━━━━━━━
 
-🧠 WHAT THIS MEANS FOR YOU
-   Practical impact on your learning journey
+📰 TOP 5 AI HEADLINES
+   Latest breakthroughs and announcements
 
-📚 TODAY'S LEARNING FOCUS
-   One topic to study today with resources
+💼 JOB OPPORTUNITIES
+   3-5 AI/ML roles matching your profile
 
-📅 THIS WEEK'S LEARNING PLAN
-   Day 1 → Day 7 learning roadmap
+🎓 TODAY'S LEARNING FOCUS
+   Personalized topic with learning path
+
+💻 TRENDING REPOSITORIES
+   Hot open-source projects
+
+🏢 COMPANY UPDATES
+   News from AI leaders
+
+🚀 PROJECT IDEAS
+   Build ideas for your portfolio
 
 🔗 MUST-READ LINKS
-   Top 3 real links to check today
+   Top real links from all agents
 ```
 
 ---
@@ -207,65 +330,108 @@ Each morning you receive:
 
 ## 🗺️ Roadmap
 
-### Version 1.0 (Current) ✅
-- [x] News fetching from 20+ sources
-- [x] AI-powered daily report generation
-- [x] Gmail email delivery
+### Version 1.0 (Legacy) ✅
+- [x] Single news agent
+- [x] Basic email delivery
 - [x] Google Calendar integration
 - [x] Daily 7AM scheduler
-- [x] Railway cloud deployment
+- [x] Railway deployment
 
-### Version 2.0 (Coming Soon) 🚧
-- [ ] NeuraCore — Master Orchestrator
-- [ ] NeuraJobs — Job Market Agent
-- [ ] NeuraLearn — Personalized Learning Agent
-- [ ] NeuraCode — GitHub Trends Agent
-- [ ] NeuraWatch — Company Intelligence Agent
-- [ ] NeuraForge — Project Ideas Agent
-- [ ] user_config.json — Dynamic preferences
-- [ ] Web dashboard
+### Version 2.0 (Current) ✅
+- [x] **NeuraCore** — Master Orchestrator
+- [x] **NeuraNews** — News aggregation from 20+ sources
+- [x] **NeuraJobs** — Job market tracking
+- [x] **NeuraLearn** — Personalized learning plans
+- [x] **NeuraCode** — GitHub trends & open source
+- [x] **NeuraWatch** — Company intelligence
+- [x] **NeuraForge** — Project idea generation
+- [x] Goal-based agent orchestration
+- [x] Day-based scheduling
+- [x] user_config.json — Dynamic preferences
+- [x] Core utilities (logger, decorators, retry logic)
+- [x] Async/safe execution patterns
+- [x] SQLite database for tracking
 
-### Version 3.0 (Future) 🔮
+### Version 3.0 (Coming Soon) 🚧
+- [ ] REST API endpoints for all agents
+- [ ] Web dashboard (React/Next.js)
+- [ ] Real-time notifications
+- [ ] Advanced filtering & preferences
+- [ ] Multi-user support with authentication
+- [ ] Database migrations & backup
+- [ ] Performance optimization & caching
+- [ ] Advanced error handling & recovery
+
+### Version 4.0 (Future) 🔮
 - [ ] Mobile app (Android + iOS)
-- [ ] WhatsApp notifications
-- [ ] Subscription plans
-- [ ] Multi-user support
+- [ ] WhatsApp/Telegram integration
+- [ ] Slack workspace integration
+- [ ] Premium subscription plans
+- [ ] Community sharing & recommendations
+- [ ] Collaborative features
+- [ ] Advanced analytics & insights
 
 ---
 
 ## 🤝 Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+We welcome contributions! Whether it's:
+- 🐛 Bug reports
+- ✨ New features
+- 📝 Documentation improvements
+- 🧪 Tests & test cases
+- 🎨 UI/UX improvements
 
-1. Fork the project
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+### Development Setup
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/YourFeatureName`)
+3. Make your changes with clear commits
+4. Write or update tests
+5. Run tests locally: `python -m pytest`
+6. Push to your fork (`git push origin feature/YourFeatureName`)
+7. Create a Pull Request with a detailed description
+
+### Code Guidelines
+
+- Follow PEP 8 style guide
+- Add docstrings to all functions/classes
+- Include type hints where possible
+- Write meaningful commit messages
+- Add tests for new features
+- Update README if adding new features
 
 ---
 
 ## 📄 License
 
-Distributed under the MIT License. See `LICENSE` for more information.
+Distributed under the MIT License. See `LICENSE` file for more information.
 
 ---
 
 ## 👤 Author
 
 **Vivek Sharma**
-- GitHub: [@Vivek29112001](https://github.com/Vivek29112001)
-- LinkedIn: [viveksharma2911](https://linkedin.com/in/viveksharma2911)
+- 🔗 GitHub: [@Vivek29112001](https://github.com/Vivek29112001)
+- 💼 LinkedIn: [viveksharma2911](https://linkedin.com/in/viveksharma2911)
+- 🌐 Portfolio: [viveksharma.dev](https://viveksharma.dev)
+
+---
+
+## 💬 Support & Feedback
+
+- 📧 Email: vivek@example.com
+- 💬 Twitter: [@vivek_code](https://twitter.com/vivek_code)
+- 🤝 Join our Discord community (coming soon)
 
 ---
 
 ## ⭐ Show Your Support
 
-If this project helped you, please give it a ⭐ on GitHub!
+If NeuraFlow helped you stay updated with AI, please give it a ⭐ on GitHub!
 
 ---
 
-*Built with ❤️ by Vivek Sharma | Powered by Groq LLaMA & NeuraFlow*
-=======
->>>>>>> 8c2bdbc8a64d3752144cba59e9c9d82ff82fe6d2
-"# Neura-Flow-AI" 
+*Built with ❤️ by Vivek Sharma*
+
+*Powered by Groq LLaMA 3.1 | Deployed on Railway* 
