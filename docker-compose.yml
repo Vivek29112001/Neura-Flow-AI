@@ -1,0 +1,93 @@
+version: "3.9"
+
+# Neura-flow AI — Phase 2 SDLC agent stack
+# Run all four services locally with: docker compose up --build
+
+x-common-env: &common-env
+  GROQ_API_KEY: ${GROQ_API_KEY}
+  NEURA_LLM_MODEL: ${NEURA_LLM_MODEL:-llama-3.3-70b-versatile}
+  NEURA_CHROMA_DIR: /data/chroma
+
+services:
+  neura-architect:
+    build:
+      context: .
+      dockerfile: services/neura_architect/Dockerfile
+    container_name: neura-architect
+    environment:
+      <<: *common-env
+    ports:
+      - "8001:8001"
+    volumes:
+      - chroma_data:/data/chroma
+
+  neura-backend:
+    build:
+      context: .
+      dockerfile: services/neura_backend/Dockerfile
+    container_name: neura-backend
+    environment:
+      <<: *common-env
+    ports:
+      - "8002:8002"
+    volumes:
+      - chroma_data:/data/chroma
+
+  neura-test:
+    build:
+      context: .
+      dockerfile: services/neura_test/Dockerfile
+    container_name: neura-test
+    environment:
+      <<: *common-env
+    ports:
+      - "8003:8003"
+    volumes:
+      - chroma_data:/data/chroma
+
+  neura-frontend:
+    build:
+      context: .
+      dockerfile: services/neura_frontend/Dockerfile
+    container_name: neura-frontend
+    environment:
+      <<: *common-env
+    ports:
+      - "8004:8004"
+    volumes:
+      - chroma_data:/data/chroma
+
+  neura-review:
+    build:
+      context: .
+      dockerfile: services/neura_review/Dockerfile
+    container_name: neura-review
+    environment:
+      <<: *common-env
+    ports:
+      - "8005:8005"
+    volumes:
+      - chroma_data:/data/chroma
+
+  neura-build:
+    build:
+      context: .
+      dockerfile: orchestrator/Dockerfile
+    container_name: neura-build
+    environment:
+      NEURA_ARCHITECT_URL: http://neura-architect:8001
+      NEURA_BACKEND_URL: http://neura-backend:8002
+      NEURA_TEST_URL: http://neura-test:8003
+      NEURA_FRONTEND_URL: http://neura-frontend:8004
+      NEURA_REVIEW_URL: http://neura-review:8005
+    ports:
+      - "8000:8000"
+    depends_on:
+      - neura-architect
+      - neura-backend
+      - neura-test
+      - neura-frontend
+      - neura-review
+
+volumes:
+  chroma_data:

@@ -4,7 +4,7 @@
         "builder": "NIXPACKS"
     },
     "deploy": {
-        "startCommand": "python app/scheduler.py",
+        "startCommand": "cd app && python scheduler.py",
         "restartPolicyType": "ON_FAILURE"
     }
 }
