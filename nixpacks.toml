@@ -1,0 +1,8 @@
+[phases.setup]
+nixPkgs = ["python312"]
+
+[phases.install]
+cmds = ["pip install -r app/requirements.txt"]
+
+[start]
+cmd = "cd app && python scheduler.py"

@@ -14,6 +14,15 @@ import tempfile
 SCOPES = ["https://www.googleapis.com/auth/calendar"]
 logger = logging.getLogger("NeuraFlow")
 
+# Detect headless / server environments (Railway, CI, Docker)
+IS_HEADLESS = any([
+    os.getenv("RAILWAY_ENVIRONMENT"),
+    os.getenv("RAILWAY_PROJECT_ID"),
+    os.getenv("RAILWAY_SERVICE_ID"),
+    os.getenv("CI"),
+    os.getenv("HEADLESS") == "true",
+])
+
 
 # ─────────────────────────────────────────
 # AUTH
@@ -35,11 +44,23 @@ def get_calendar_service():
 
     if not creds or not creds.valid:
         if creds and creds.expired and creds.refresh_token:
+            logger.info("Refreshing expired Google token...")
             creds.refresh(Request())
+            # Save refreshed token back to disk (for this session)
+            with open("token.pickle", "wb") as token:
+                pickle.dump(creds, token)
+            logger.info("Token refreshed and saved!")
         else:
-            # Railway: load credentials from env variable
-            creds_json = os.getenv("GOOGLE_CREDENTIALS_JSON")
+            # ── Headless server (Railway) — cannot open a browser ──
+            if IS_HEADLESS:
+                raise RuntimeError(
+                    "Google Calendar: no valid token found on Railway.\n"
+                    "Run 'python generate_token.py' locally, then set the printed\n"
+                    "GOOGLE_TOKEN_BASE64 value as a Railway environment variable."
+                )
 
+            # ── Local: interactive browser OAuth flow ──
+            creds_json = os.getenv("GOOGLE_CREDENTIALS_JSON")
             if creds_json:
                 tmp = tempfile.NamedTemporaryFile(
                     mode='w', suffix='.json', delete=False
@@ -49,7 +70,6 @@ def get_calendar_service():
                 creds_path = tmp.name
                 tmp.close()
             else:
-                # Local: use file
                 creds_path = os.getenv(
                     "GOOGLE_CREDENTIALS_PATH",
                     "google_credentials.json"
@@ -60,8 +80,8 @@ def get_calendar_service():
             )
             creds = flow.run_local_server(port=0)
 
-        with open("token.pickle", "wb") as token:
-            pickle.dump(creds, token)
+            with open("token.pickle", "wb") as token:
+                pickle.dump(creds, token)
 
     return build("calendar", "v3", credentials=creds)
 
